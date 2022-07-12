@@ -3,7 +3,7 @@
     <header>
       <Link href="/home">Home</Link>
       <Link href="/about">About</Link>
-      <Link href="/contact">Contact</Link>
+      <Link href="/users">User</Link>
     </header>
     <article>
       <slot />

@@ -1,8 +1,9 @@
 <script>
 import Layout from '../Shared/Layout.vue';
+import { Link } from '@inertiajs/inertia-vue3';
   export default {
     props: ["title"],
-    components: { Layout }
+    components: { Link, Layout }
 }
 </script>
 
@@ -11,7 +12,7 @@ import Layout from '../Shared/Layout.vue';
 </style>
 
 <template>
-  <Layout>
+  <Layout title="Ïnertia Laravel">
     <h1 v-text="title"></h1>
   </Layout>
 </template>

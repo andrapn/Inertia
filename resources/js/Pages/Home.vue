@@ -15,5 +15,4 @@
   <Layout title="Inertia-Laravel">
     <h1>Hello {{ title }}</h1>
   </Layout>
-<Link href="/about">About</Link>
 </template>

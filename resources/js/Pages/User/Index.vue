@@ -1,6 +1,8 @@
 <template>
+  <Layout title="Daftar User">
   <div>
     <h1>Daftar {{ title }}</h1>
+      <Link href="/users/create">Register</Link>
     <ul>
       <li v-for="user in users">
       <p>{{ user.name }}</p>
@@ -8,15 +10,17 @@
       </li>
     </ul>
   </div>
+  </Layout>
 </template>
 
 <script>
+import Layout from '../../Shared/Layout.vue';
 import { Link } from '@inertiajs/inertia-vue3';
   export default {
     props: {
       title: String,
       users: Array
     },
-    components: { Link }
+    components: { Link, Layout }
   }
 </script>

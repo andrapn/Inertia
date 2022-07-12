@@ -1,4 +1,5 @@
 <template>
+  <Layout title="Detail User">
   <div>
     <h1>{{ title }}</h1>
     <ul>
@@ -10,15 +11,17 @@
       </li>
     </ul>
   </div>
+  </Layout>
 </template>
 
 <script>
+import Layout from '../../Shared/Layout.vue';
 import { Link } from '@inertiajs/inertia-vue3';
   export default {
     props: {
       title: String,
       user: Object
     },
-    components: { Link }
+    components: { Layout, Link }
   }
 </script>
